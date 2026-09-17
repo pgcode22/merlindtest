@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <title>Product Catalog | Merlin Life Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Merlin Life Care's complete veterinary pharmaceutical portfolio: 12 specialized formulations for poultry respiratory, hepatic, immune, and gut health.">
+  
+  <!-- Favicon -->
+  <link href="../favicon.ico" rel="icon" type="image/x-icon">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            merlin: {
+              DEFAULT: '#70a323',
+              dark: '#588019',
+              light: '#8ec92d',
+              tint: 'rgba(112, 163, 35, 0.08)',
+              border: 'rgba(112, 163, 35, 0.25)',
+            },
+            pine: {
+              DEFAULT: '#111d13',
+              surface: '#18281b',
+              subtle: '#223626',
+            },
+            forest: '#1e3322',
+            cream: '#fbfdf9',
+            surface: '#f4f7f2',
+            'surface-hover': '#ebf1e8',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Core Custom Styles -->
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+
+<body class="bg-cream text-slate-800 antialiased selection:bg-merlin selection:text-white flex flex-col min-h-screen">
+
+  <!-- TOP CLINICAL NOTICE BAR -->
+  <header class="bg-pine text-slate-300 text-xs border-b border-pine-subtle/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-merlin"></span>
+        <span class="font-medium tracking-wide">Veterinary Pharmaceuticals & Poultry Health Solutions • Multan, Pakistan</span>
+      </div>
+      <div class="flex items-center gap-5 text-slate-300">
+        <a href="tel:+923007387789" class="hover:text-merlin-light transition-colors flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-merlin" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>+92 300 7387789</span>
+        </a>
+        <span class="text-slate-600 hidden sm:inline">•</span>
+        <a href="mailto:merlinlifecare@outlook.com" class="hover:text-merlin-light transition-colors hidden sm:flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-merlin" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>merlinlifecare@outlook.com</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN NAVIGATION -->
+  <nav data-nav class="sticky top-0 z-50 nav-scrim transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- BRAND LOGO -->
+        <a href="../" class="flex items-center gap-3 group focus:outline-none" aria-label="Merlin Life Care Home">
+          <img src="../assets/img/merlin logo.webp" alt="Merlin Life Care Logo" class="h-11 w-auto object-contain">
+        </a>
+
+        <!-- DESKTOP NAV LINKS -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="../" class="text-sm font-medium text-slate-700 hover:text-merlin-dark transition-colors py-1">Home</a>
+          <a href="../about/" class="text-sm font-medium text-slate-700 hover:text-merlin-dark transition-colors py-1">About</a>
+          <a href="./" class="text-sm font-semibold text-merlin-dark border-b-2 border-merlin py-1 flex items-center gap-1.5">
+            <span>Products</span>
+            <span class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-full bg-merlin/10 text-merlin-dark">12 Formulations</span>
+          </a>
+          <a href="../contact/" class="text-sm font-medium text-slate-700 hover:text-merlin-dark transition-colors py-1">Contact</a>
+        </div>
+
+        <!-- RIGHT CTA BUTTON -->
+        <div class="hidden md:flex items-center gap-4">
+          <a href="../contact/" class="inline-flex items-center gap-2 bg-merlin hover:bg-merlin-dark text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-sm transition-all hover:shadow hover:-translate-y-0.5">
+            <span>Consult Technical Team</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+
+        <!-- MOBILE MENU TOGGLER -->
+        <div class="flex md:hidden">
+          <button data-mobile-toggle type="button" class="p-2.5 rounded-lg text-slate-700 hover:text-merlin-dark hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-merlin" aria-expanded="false" aria-label="Toggle navigation menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE DRAWER MENU -->
+    <div data-mobile-menu class="hidden md:hidden border-t border-slate-200 bg-cream/98 px-4 pt-3 pb-6 space-y-2">
+      <a href="../" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Home</a>
+      <a href="../about/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">About</a>
+      <a href="./" class="block px-3 py-2.5 rounded-lg text-base font-semibold text-merlin bg-merlin/10 flex items-center justify-between">
+        <span>Products</span>
+        <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-merlin/10 text-merlin">12 Solutions</span>
+      </a>
+      <a href="../contact/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Contact</a>
+      <div class="pt-3">
+        <a href="../contact/" class="w-full inline-flex items-center justify-center gap-2 bg-merlin text-white font-semibold py-3 rounded-lg shadow-sm">
+          <span>Consult Technical Team</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CATALOG HERO BANNER -->
+  <section class="bg-pine text-white py-14 border-b border-pine-subtle">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-xs font-bold uppercase tracking-widest text-merlin-light mb-2">Pharmaceutical Portfolio</p>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+          Poultry Health Formulations
+        </h1>
+        <p class="text-slate-300 mt-3 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
+          Comprehensive therapeutic catalog engineered to support flock performance, hepatic recovery, respiratory stability, and intestinal integrity.
+        </p>
+      </div>
+
+      <!-- SEARCH & FILTER CONTROLS -->
+      <div class="mt-8 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+        <!-- SEARCH INPUT -->
+        <div class="relative w-full md:max-w-md">
+          <input 
+            data-catalog-search 
+            type="text" 
+            placeholder="Search by product name, indication, or active ingredient..." 
+            class="w-full pl-11 pr-4 py-3 rounded-xl bg-pine-surface border border-white/15 focus:border-merlin focus:ring-2 focus:ring-merlin/30 text-white placeholder-slate-400 text-sm outline-none transition-all"
+            aria-label="Search product catalog"
+          >
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 text-xs text-slate-400">
+          <span data-catalog-count class="font-semibold text-merlin-light">12 products</span>
+          <span>•</span>
+          <span>Official Technical Literature Available</span>
+        </div>
+      </div>
+
+      <!-- CATEGORY FILTER PILLS -->
+      <div class="mt-6 flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none text-xs">
+        <button data-catalog-filter="all" type="button" class="px-4 py-2 rounded-lg font-semibold whitespace-nowrap transition-colors bg-merlin text-white border border-merlin">
+          All Formulations
+        </button>
+        <button data-catalog-filter="respiratory" type="button" class="px-4 py-2 rounded-lg font-semibold whitespace-nowrap transition-colors bg-white/10 text-slate-300 border border-white/10 hover:bg-white/20">
+          Respiratory & CRD
+        </button>
+        <button data-catalog-filter="liver" type="button" class="px-4 py-2 rounded-lg font-semibold whitespace-nowrap transition-colors bg-white/10 text-slate-300 border border-white/10 hover:bg-white/20">
+          Liver & Detox
+        </button>
+        <button data-catalog-filter="immunity" type="button" class="px-4 py-2 rounded-lg font-semibold whitespace-nowrap transition-colors bg-white/10 text-slate-300 border border-white/10 hover:bg-white/20">
+          Immunity & Skeletal
+        </button>
+        <button data-catalog-filter="acidifier" type="button" class="px-4 py-2 rounded-lg font-semibold whitespace-nowrap transition-colors bg-white/10 text-slate-300 border border-white/10 hover:bg-white/20">
+          Acidifiers & Gut
+        </button>
+        <button data-catalog-filter="stress" type="button" class="px-4 py-2 rounded-lg font-semibold whitespace-nowrap transition-colors bg-white/10 text-slate-300 border border-white/10 hover:bg-white/20">
+          Stress & Electrolytes
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRODUCT GRID SECTION -->
+  <main class="py-16 bg-cream flex-grow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- GRID OF 12 PRODUCTS -->
+      <div data-catalog-grid class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <!-- 1. ACIDO FORTE -->
+        <a href="acido-forte/" data-product-card data-name="Acido Forte" data-category="acidifier gut" data-role="Acidifier for poultry" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Acidifier</span>
+              <span class="text-xs font-semibold text-slate-500">25 Liters</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/acido.webp" alt="Acido Forte container packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">Acido Forte</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Acidifier for poultry</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              Formic acid, propionic acid, lactic acid, and citric acid blend to sanitize water lines and optimize intestinal bacterial balance.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+        <!-- 2. CRD MINT -->
+        <a href="crd-mint/" data-product-card data-name="CRD Mint" data-category="respiratory" data-role="Effective against CRD & Bronchodilator" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Respiratory</span>
+              <span class="text-xs font-semibold text-slate-500">1L • 5L</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/crd mint.webp" alt="CRD Mint bottle packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">CRD Mint</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Effective against CRD & Bronchodilator</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              Menthol, eucalyptus, peppermint, and thyme oils for rapid respiratory decongestion and mucosa inflammation relief.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+        <!-- 3. CS GUARD 20 -->
+        <a href="cs-guard-20/" data-product-card data-name="CS Guard 20" data-category="acidifier gut" data-role="Acidifier for poultry" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Acidifier</span>
+              <span class="text-xs font-semibold text-slate-500">5 Liters</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/cs guard 20.webp" alt="CS Guard 20 bottle packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">CS Guard 20</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Chelated Copper & Acidifier Complex</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              20% Chelated Copper with lactic, citric acid, and sorbitol to eliminate gizzard erosion and inhibit intestinal fungal colonization.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+        <!-- 4. FROST -->
+        <a href="frost/" data-product-card data-name="Frost" data-category="stress" data-role="Heat stress reliever for poultry" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Stress Reliever</span>
+              <span class="text-xs font-semibold text-slate-500">5 Liters</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/frost.webp" alt="Frost bottle packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">Frost</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Heat Stress & Osmoregulator</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              Stabilizes blood pH, prevents thermal dehydration, and eases vital organ function during periods of extreme high shed temperature.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+        <!-- 5. IMMUNIT Z -->
+        <a href="immunit-z/" data-product-card data-name="Immunit Z" data-category="immunity" data-role="Immunomodulator for poultry" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Immunity</span>
+              <span class="text-xs font-semibold text-slate-500">1L • 5L</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/immunitz.webp" alt="Immunit Z bottle packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">Immunit Z</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Immunomodulator for poultry</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              Lysozymes, nucleotides, omega-3, vitamin C, garlic, and echinacea to boost leukocyte counts and immunoglobulin synthesis.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+        <!-- 6. MERLIN FIX -->
+        <a href="merlin-fix/" data-product-card data-name="Merlin Fix" data-category="liver detox" data-role="Mycotoxin binder for poultry" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Toxin Binder</span>
+              <span class="text-xs font-semibold text-slate-500">25 Kg Bag</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/merlin.webp" alt="Merlin Fix bag packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">Merlin Fix</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Mycotoxin Binder & Adsorbent</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              Formulated with yeast cell walls, HSCAS, organic acids, and MOS to bind polar and non-polar mycotoxins in feed.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+        <!-- 7. MLC-100 -->
+        <a href="mlc-100/" data-product-card data-name="MLC-100" data-category="liver" data-role="Liver tonic for poultry" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Liver Tonic</span>
+              <span class="text-xs font-semibold text-slate-500">1L • 5L</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/mlc100.webp" alt="MLC-100 bottle packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">MLC-100</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Liver tonic & Metabolic Enhancer</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              Tricholine citrate, inositol, vitamin B12, and liver extract to protect liver architecture and reverse toxic hepatitis.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+        <!-- 8. MLC-360 -->
+        <a href="mlc-360/" data-product-card data-name="MLC-360" data-category="immunity" data-role="Vitality Enhancer" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Vitality</span>
+              <span class="text-xs font-semibold text-slate-500">25 Liters</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/mlc 360.webp" alt="MLC-360 container packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">MLC-360</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Vitality Enhancer & Botanical Adaptogen</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              Curcuma zedoaria, astragalus, ganoderma, and zizyphus extract to optimize stamina, flock livability, and systemic vitality.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+        <!-- 9. RENOGUARD FLUSH -->
+        <a href="renoguard-flush/" data-product-card data-name="Renoguard Flush" data-category="stress detox" data-role="Kidney flush for poultry" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Kidney Flush</span>
+              <span class="text-xs font-semibold text-slate-500">1 Kg</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/renoguard.webp" alt="Renoguard Flush packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">Renoguard Flush</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Kidney flush for poultry</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              Potassium citrate, sodium citrate, ammonium chloride, and vitamin C to flush visceral uric acid and relieve renal gout.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+        <!-- 10. TASK 1 -->
+        <a href="task-1/" data-product-card data-name="Task 1" data-category="liver" data-role="Liver conditioner for poultry" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Liver Conditioner</span>
+              <span class="text-xs font-semibold text-slate-500">1L • 5L</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/task1.webp" alt="Task 1 bottle packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">Task 1</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Hepatic Regenerative Liver Conditioner</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              Choline chloride, sorbitol, artichoke, betaine, and L-carnitine to clear fat accumulation and stimulate sluggish parenchyma cells.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+        <!-- 11. TOPVIT -->
+        <a href="topvit/" data-product-card data-name="Topvit" data-category="stress" data-role="Vitamin and electrolyte supplement for poultry" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Multivitamin</span>
+              <span class="text-xs font-semibold text-slate-500">5 Liters</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/topvit.webp" alt="Topvit bottle packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">Topvit</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Multivitamin & Amino Electrolyte Balance</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              Complete profile of 38 vitamins, amino acids, and minerals to overcome vaccination stress, anorexia, and boost hatchability.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+        <!-- 12. VITAL FRAME -->
+        <a href="vital-frame/" data-product-card data-name="Vital Frame" data-category="immunity" data-role="Support for poultry health and performance" class="group bg-white rounded-2xl p-6 border border-slate-200 hover:border-merlin/60 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-merlin/10 text-merlin-dark">Skeletal Health</span>
+              <span class="text-xs font-semibold text-slate-500">5 Liters</span>
+            </div>
+            <div class="w-full h-52 flex items-center justify-center p-4 bg-slate-50 rounded-xl mb-5 overflow-hidden">
+              <img src="../assets/products/vitalframe.webp" alt="Vital Frame bottle packshot" class="product-packshot max-h-full max-w-full object-contain">
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-merlin-dark transition-colors mb-1">Vital Frame</h2>
+            <p class="text-xs font-medium text-slate-500 mb-2">Bone, Shell & Mineral Optimization</p>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+              Calcium chloride, phosphorus, phytase, vitamin D3, and zinc to prevent rickets, osteomalacia, and egg hairline fractures.
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-merlin-dark">
+            <span>View Technical Data</span>
+            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- NO RESULTS EMPTY STATE -->
+      <div data-catalog-empty class="hidden text-center py-16 bg-white rounded-2xl border border-dashed border-slate-300">
+        <svg class="w-12 h-12 text-slate-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <h3 class="text-lg font-bold text-slate-800">No matching formulations found</h3>
+        <p class="text-sm text-slate-500 mt-1">Try adjusting your search term or select another therapeutic category.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- STATEMENT FOOTER -->
+  <footer class="bg-pine text-slate-300 pt-16 pb-12 border-t border-pine-subtle mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <img src="../assets/img/merlin logo.webp" alt="Merlin Life Care Logo" class="h-12 w-auto object-contain brightness-110">
+          <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+            Delivering high-efficacy veterinary pharmaceuticals, bio-security formulations, and nutritional supplements to safeguard commercial poultry flock health and farm productivity.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.facebook.com/profile.php?id=61585911164841" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 hover:bg-merlin text-white flex items-center justify-center transition-colors" aria-label="Merlin Life Care Facebook Page">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.688 5H18V0h-3.808C10.595 0 9 1.582 9 4.615V8z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/merlinlifecare/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 hover:bg-merlin text-white flex items-center justify-center transition-colors" aria-label="Merlin Life Care Instagram Profile">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigation</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="../" class="text-slate-400 hover:text-merlin-light transition-colors">Home</a></li>
+            <li><a href="../about/" class="text-slate-400 hover:text-merlin-light transition-colors">About Company</a></li>
+            <li><a href="./" class="text-slate-400 hover:text-merlin-light transition-colors font-semibold text-white">Product Catalog (12)</a></li>
+            <li><a href="../contact/" class="text-slate-400 hover:text-merlin-light transition-colors">Contact & Facility</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-white mb-4">Therapeutics</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="crd-mint/" class="text-slate-400 hover:text-merlin-light transition-colors">CRD Mint</a></li>
+            <li><a href="immunit-z/" class="text-slate-400 hover:text-merlin-light transition-colors">Immunit Z</a></li>
+            <li><a href="mlc-100/" class="text-slate-400 hover:text-merlin-light transition-colors">MLC-100</a></li>
+            <li><a href="frost/" class="text-slate-400 hover:text-merlin-light transition-colors">Frost</a></li>
+            <li><a href="task-1/" class="text-slate-400 hover:text-merlin-light transition-colors">Task 1</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-white mb-4">Multan Facility</p>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">
+            House # 119-A, Street # 4, Block E,<br>Shah Rukn-e-Alam Colony, Multan.
+          </p>
+          <p class="text-xs text-slate-400 mb-1">
+            <span class="text-white font-medium">Direct:</span> +92 300 7387789
+          </p>
+          <p class="text-xs text-slate-400">
+            <span class="text-white font-medium">Office:</span> 0612276967
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>© 2026 Merlin Life Care. All rights reserved.</p>
+        <p>Veterinary Pharmaceutical & Poultry Healthcare Manufacturer.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../js/site.js"></script>
+</body>
+</html>

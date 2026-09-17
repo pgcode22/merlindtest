@@ -1,0 +1,148 @@
+/* ==========================================================================
+   MERLIN LIFE CARE — DESIGN SYSTEM & CORE STYLES
+   Veterinary Pharmaceuticals & Poultry Health Solutions
+   ========================================================================== */
+
+:root {
+  --color-merlin: #70a323;
+  --color-merlin-dark: #588019;
+  --color-merlin-light: #8ec92d;
+  --color-merlin-tint: rgba(112, 163, 35, 0.08);
+  --color-merlin-border: rgba(112, 163, 35, 0.25);
+  --color-pine: #111d13;
+  --color-pine-surface: #18281b;
+  --color-forest: #1e3322;
+  --color-cream: #fbfdf9;
+  --color-surface: #f4f7f2;
+  --color-surface-hover: #ebf1e8;
+  --color-border: #e2e8df;
+  --color-text-main: #142116;
+  --color-text-muted: #4e5f52;
+}
+
+/* Base resets & typography */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-text-main);
+  background-color: var(--color-cream);
+  overflow-x: hidden;
+}
+
+/* Custom selection */
+::selection {
+  background-color: #70a323;
+  color: #ffffff;
+}
+
+/* Focus ring accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-merlin);
+  outline-offset: 2px;
+}
+
+/* Scrim / Gradient overlays for Hero & Banners */
+.hero-scrim {
+  background: linear-gradient(
+    90deg,
+    rgba(17, 29, 19, 0.94) 0%,
+    rgba(17, 29, 19, 0.85) 45%,
+    rgba(17, 29, 19, 0.55) 75%,
+    rgba(17, 29, 19, 0.4) 100%
+  );
+}
+
+@media (max-width: 1024px) {
+  .hero-scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(17, 29, 19, 0.88) 0%,
+      rgba(17, 29, 19, 0.92) 50%,
+      rgba(17, 29, 19, 0.95) 100%
+    );
+  }
+}
+
+/* Header subtle blur scrim */
+.nav-scrim {
+  background: rgba(251, 253, 249, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.nav-scrim-dark {
+  background: rgba(17, 29, 19, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Technical Product Tables */
+.spec-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.spec-table tr {
+  transition: background-color 0.15s ease;
+}
+
+.spec-table tr:hover {
+  background-color: var(--color-surface);
+}
+
+.spec-table td {
+  padding: 0.875rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.9375rem;
+}
+
+.spec-table tr:last-child td {
+  border-bottom: none;
+}
+
+.spec-table td:first-child {
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.spec-table td:last-child {
+  text-align: right;
+  font-weight: 500;
+  color: var(--color-merlin-dark);
+}
+
+/* Smooth Image hover scales */
+.group:hover .product-packshot {
+  transform: translateY(-6px) scale(1.03);
+}
+
+.product-packshot {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+/* Micro-animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

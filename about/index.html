@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <title>About Us | Veterinary Pharmaceutical Formulation & Leadership | Merlin Life Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Merlin Life Care: Dedicated veterinary pharmaceutical manufacturer based in Multan, Pakistan, delivering advanced biosecurity, acidifiers, and nutritional solutions for commercial poultry.">
+  
+  <link href="../favicon.ico" rel="icon" type="image/x-icon">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            merlin: {
+              DEFAULT: '#70a323',
+              dark: '#588019',
+              light: '#8ec92d',
+              tint: 'rgba(112, 163, 35, 0.08)',
+              border: 'rgba(112, 163, 35, 0.25)',
+            },
+            pine: {
+              DEFAULT: '#111d13',
+              surface: '#18281b',
+              subtle: '#223626',
+            },
+            forest: '#1e3322',
+            cream: '#fbfdf9',
+            surface: '#f4f7f2',
+            'surface-hover': '#ebf1e8',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+
+<body class="bg-cream text-slate-800 antialiased selection:bg-merlin selection:text-white flex flex-col min-h-screen">
+
+  <!-- TOP CLINICAL NOTICE BAR -->
+  <header class="bg-pine text-slate-300 text-xs border-b border-pine-subtle/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-merlin"></span>
+        <span class="font-medium tracking-wide">Veterinary Pharmaceuticals & Poultry Health Solutions • Multan, Pakistan</span>
+      </div>
+      <div class="flex items-center gap-5 text-slate-300">
+        <a href="tel:+923007387789" class="hover:text-merlin-light transition-colors flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-merlin" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>+92 300 7387789</span>
+        </a>
+        <span class="text-slate-600 hidden sm:inline">•</span>
+        <a href="mailto:merlinlifecare@outlook.com" class="hover:text-merlin-light transition-colors hidden sm:flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-merlin" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>merlinlifecare@outlook.com</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN NAVIGATION -->
+  <nav data-nav class="sticky top-0 z-50 nav-scrim transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="../" class="flex items-center gap-3 group focus:outline-none" aria-label="Merlin Life Care Home">
+          <img src="../assets/img/merlin logo.webp" alt="Merlin Life Care Logo" class="h-11 w-auto object-contain">
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a href="../" class="text-sm font-medium text-slate-700 hover:text-merlin-dark transition-colors py-1">Home</a>
+          <a href="../about/" class="text-sm font-semibold text-merlin-dark border-b-2 border-merlin py-1">About</a>
+          <a href="../products/" class="text-sm font-medium text-slate-700 hover:text-merlin-dark transition-colors py-1 flex items-center gap-1.5">
+            <span>Products</span>
+            <span class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-full bg-merlin/10 text-merlin-dark">12 Formulations</span>
+          </a>
+          <a href="../contact/" class="text-sm font-medium text-slate-700 hover:text-merlin-dark transition-colors py-1">Contact</a>
+        </div>
+
+        <div class="hidden md:flex items-center gap-4">
+          <a href="../contact/" class="inline-flex items-center gap-2 bg-merlin hover:bg-merlin-dark text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-sm transition-all hover:shadow hover:-translate-y-0.5">
+            <span>Consult Technical Team</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+
+        <div class="flex md:hidden">
+          <button data-mobile-toggle type="button" class="p-2.5 rounded-lg text-slate-700 hover:text-merlin-dark hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-merlin" aria-expanded="false" aria-label="Toggle navigation menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div data-mobile-menu class="hidden md:hidden border-t border-slate-200 bg-cream/98 px-4 pt-3 pb-6 space-y-2">
+      <a href="../" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Home</a>
+      <a href="../about/" class="block px-3 py-2.5 rounded-lg text-base font-semibold text-merlin bg-merlin/10">About</a>
+      <a href="../products/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 flex items-center justify-between">
+        <span>Products</span>
+        <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-merlin/10 text-merlin">12 Solutions</span>
+      </a>
+      <a href="../contact/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100">Contact</a>
+      <div class="pt-3">
+        <a href="../contact/" class="w-full inline-flex items-center justify-center gap-2 bg-merlin text-white font-semibold py-3 rounded-lg shadow-sm">
+          <span>Consult Technical Team</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="bg-surface border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between text-xs sm:text-sm">
+      <div class="flex items-center gap-2 text-slate-500">
+        <a href="../" class="hover:text-merlin-dark">Home</a>
+        <span>/</span>
+        <span class="font-bold text-slate-800">About Company</span>
+      </div>
+      <a href="../products/" class="inline-flex items-center gap-1.5 font-bold text-merlin-dark hover:text-merlin transition-colors">
+        <span>Explore 12 Formulations</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <main class="flex-grow">
+    
+    <!-- EDITORIAL HEADER SECTION -->
+    <section class="py-16 sm:py-20 bg-gradient-to-b from-white to-surface/60 border-b border-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-merlin/10 border border-merlin/25 text-merlin-dark text-xs font-bold uppercase tracking-wider mb-4">
+            <span>Corporate Profile & Formulation Philosophy</span>
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Veterinary Science Dedicated to Flock Resilience & Farm Productivity.
+          </h1>
+          <p class="text-base sm:text-lg text-slate-600 mt-6 leading-relaxed">
+            Founded with an uncompromising commitment to clinical rigor and agricultural biotech excellence, Merlin Life Care develops high-efficacy veterinary pharmaceuticals, synergistic acidifiers, and specialized nutritional compounds engineered specifically for commercial poultry producers across Pakistan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE MISSION & PHILOSOPHY -->
+    <section class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <h2 class="text-xs font-bold uppercase tracking-widest text-merlin-dark">Clinical Standards</h2>
+          <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+            Bridging Pharmaceutical Science with Real Commercial Farm Economics
+          </p>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+            Modern commercial poultry production faces unprecedented microbiological and environmental challenges. Extreme summer thermal stress, rising feed input costs, immunosuppressive viral pressures, and strict global standards on antimicrobial stewardship require smarter, cleaner therapeutics.
+          </p>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+            At Merlin Life Care, every batch is compounded with certified United States Pharmacopeia (USP) grade actives. We eliminate filler compounds, focusing entirely on maximum biological bioavailability, rapid water solubility, and measurable flock return on investment (ROI).
+          </p>
+
+          <div class="pt-4 grid grid-cols-2 gap-4 border-t border-border">
+            <div class="p-4 rounded-xl bg-surface border border-border">
+              <p class="text-2xl font-extrabold text-merlin-dark">100%</p>
+              <p class="text-xs font-semibold text-slate-600 mt-0.5">Pharmacopoeia (USP) Active Ingredients</p>
+            </div>
+            <div class="p-4 rounded-xl bg-surface border border-border">
+              <p class="text-2xl font-extrabold text-pine">12 Core</p>
+              <p class="text-xs font-semibold text-slate-600 mt-0.5">Targeted Therapeutic Protocols</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 CORE PILLAR CARDS -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="p-6 rounded-2xl bg-white border border-border shadow-sm hover:border-merlin/40 transition-colors">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-merlin/10 flex items-center justify-center text-merlin-dark font-bold text-lg flex-shrink-0">
+                01
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Preventive Gut Health & Biosecurity</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Synergistic organic acid complexes and water sanitizers that suppress enteropathogens (Salmonella, E. coli) while regenerating the gizzard's koilin lining.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-border shadow-sm hover:border-merlin/40 transition-colors">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-merlin/10 flex items-center justify-center text-merlin-dark font-bold text-lg flex-shrink-0">
+                02
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Hepato-Renal Detoxification & Recovery</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Elite liver tonics (Silymarin, Cynarin, L-Carnitine) and renal flush compounds that reverse toxicosis, dissolve urate deposits, and expedite post-medication recovery.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-border shadow-sm hover:border-merlin/40 transition-colors">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-merlin/10 flex items-center justify-center text-merlin-dark font-bold text-lg flex-shrink-0">
+                03
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Immunomodulation & Stress Mitigation</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Bioactive lysozymes, osmoprotectants, and balanced electrolytes engineered to sustain peak antibody titers, survive heat waves, and maintain optimal FCR.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LEADERSHIP & VETERINARY DIRECTORS -->
+    <section class="py-16 sm:py-24 bg-surface border-y border-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <p class="text-xs font-bold uppercase tracking-widest text-merlin-dark mb-1">Executive & Clinical Leadership</p>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Direct Veterinary Guidance</h2>
+          <p class="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
+            Our directors bring decades of hands-on poultry field experience, diagnostic competence, and technical guidance directly to farm managers and commercial integrators.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Leader 1 -->
+          <div class="bg-white rounded-3xl border border-border overflow-hidden shadow-sm hover:shadow-md transition-all group flex flex-col">
+            <div class="aspect-square bg-slate-100 relative overflow-hidden flex items-center justify-center">
+              <img src="../assets/img/asifsb.webp" alt="Dr. Asif Waseem" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="text-xs font-bold uppercase tracking-wider text-merlin-dark">Managing Director</span>
+              <h3 class="text-xl font-bold text-slate-900 mt-1">Dr. Asif Waseem</h3>
+              <p class="text-xs text-slate-500 mt-0.5 mb-4">Veterinary Medicine & Clinical Strategy</p>
+              
+              <div class="mt-auto pt-4 border-t border-border/80 flex items-center justify-between text-xs font-semibold">
+                <a href="https://wa.me/923217736809" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-merlin-dark hover:text-merlin">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 1.771.815 2.791.815 3.178 0 5.767-2.587 5.767-5.766.001-3.18-2.587-5.768-5.767-5.768zm3.397 8.252c-.145.409-.737.75-1.018.795-.27.043-.618.067-1.785-.415-1.492-.618-2.457-2.137-2.532-2.237-.074-.1-6.11-8.14 0 0-.001-.001.074-.099.61-.852.196-.271.393-.341.524-.341.131 0 .262.001.378.007.123.006.287-.047.45.342.164.39.557 1.358.606 1.458.049.1.082.217.016.347-.066.13-.099.217-.197.332-.099.115-.208.258-.297.347-.1.098-.204.205-.088.404.116.199.516.852 1.108 1.38 1.157 1.033 1.637 1.189 1.869 1.288.232.099.369.083.507-.076.138-.159.59-.687.747-.922.158-.235.316-.197.525-.119.21.078 1.332.628 1.562.743.23.115.383.173.439.27.056.098.056.568-.089.977z"/></svg>
+                  <span>+92 321 7736809</span>
+                </a>
+                <a href="mailto:waseemasif205@gmail.com" class="text-slate-400 hover:text-slate-700">Email</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leader 2 -->
+          <div class="bg-white rounded-3xl border border-border overflow-hidden shadow-sm hover:shadow-md transition-all group flex flex-col">
+            <div class="aspect-square bg-slate-100 relative overflow-hidden flex items-center justify-center">
+              <img src="../assets/img/hassansb.webp" alt="Hassan Khan" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="text-xs font-bold uppercase tracking-wider text-merlin-dark">Managing Director</span>
+              <h3 class="text-xl font-bold text-slate-900 mt-1">Hassan Khan</h3>
+              <p class="text-xs text-slate-500 mt-0.5 mb-4">Operations & Supply Chain Management</p>
+              
+              <div class="mt-auto pt-4 border-t border-border/80 flex items-center justify-between text-xs font-semibold">
+                <a href="https://wa.me/923006864005" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-merlin-dark hover:text-merlin">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 1.771.815 2.791.815 3.178 0 5.767-2.587 5.767-5.766.001-3.18-2.587-5.768-5.767-5.768zm3.397 8.252c-.145.409-.737.75-1.018.795-.27.043-.618.067-1.785-.415-1.492-.618-2.457-2.137-2.532-2.237-.074-.1-6.11-8.14 0 0-.001-.001.074-.099.61-.852.196-.271.393-.341.524-.341.131 0 .262.001.378.007.123.006.287-.047.45.342.164.39.557 1.358.606 1.458.049.1.082.217.016.347-.066.13-.099.217-.197.332-.099.115-.208.258-.297.347-.1.098-.204.205-.088.404.116.199.516.852 1.108 1.38 1.157 1.033 1.637 1.189 1.869 1.288.232.099.369.083.507-.076.138-.159.59-.687.747-.922.158-.235.316-.197.525-.119.21.078 1.332.628 1.562.743.23.115.383.173.439.27.056.098.056.568-.089.977z"/></svg>
+                  <span>+92 300 6864005</span>
+                </a>
+                <a href="mailto:hassan.hkmk1990@gmail.com" class="text-slate-400 hover:text-slate-700">Email</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leader 3 -->
+          <div class="bg-white rounded-3xl border border-border overflow-hidden shadow-sm hover:shadow-md transition-all group flex flex-col">
+            <div class="aspect-square bg-slate-100 relative overflow-hidden flex items-center justify-center">
+              <img src="../assets/img/asharsb.webp" alt="Dr. Ashar Raza Khan" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="text-xs font-bold uppercase tracking-wider text-merlin-dark">B.D.M. National</span>
+              <h3 class="text-xl font-bold text-slate-900 mt-1">Dr. Ashar Raza Khan</h3>
+              <p class="text-xs text-slate-500 mt-0.5 mb-4">National Farm Partnerships & Technical Advisory</p>
+              
+              <div class="mt-auto pt-4 border-t border-border/80 flex items-center justify-between text-xs font-semibold">
+                <a href="https://wa.me/923007387789" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-merlin-dark hover:text-merlin">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 1.771.815 2.791.815 3.178 0 5.767-2.587 5.767-5.766.001-3.18-2.587-5.768-5.767-5.768zm3.397 8.252c-.145.409-.737.75-1.018.795-.27.043-.618.067-1.785-.415-1.492-.618-2.457-2.137-2.532-2.237-.074-.1-6.11-8.14 0 0-.001-.001.074-.099.61-.852.196-.271.393-.341.524-.341.131 0 .262.001.378.007.123.006.287-.047.45.342.164.39.557 1.358.606 1.458.049.1.082.217.016.347-.066.13-.099.217-.197.332-.099.115-.208.258-.297.347-.1.098-.204.205-.088.404.116.199.516.852 1.108 1.38 1.157 1.033 1.637 1.189 1.869 1.288.232.099.369.083.507-.076.138-.159.59-.687.747-.922.158-.235.316-.197.525-.119.21.078 1.332.628 1.562.743.23.115.383.173.439.27.056.098.056.568-.089.977z"/></svg>
+                  <span>+92 300 7387789</span>
+                </a>
+                <a href="mailto:ashkhan2524@gmail.com" class="text-slate-400 hover:text-slate-700">Email</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-pine rounded-3xl p-8 sm:p-14 text-white relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="max-w-2xl space-y-3 z-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-merlin-light">Commercial Collaboration</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+            Consult With Our Veterinary Pharmacologists
+          </h2>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Need customized dosing protocols for your flock size or seasonal challenges? Contact our Multan headquarters for diagnostic consultation and rapid product dispatch.
+          </p>
+        </div>
+        <div class="flex-shrink-0 z-10">
+          <a href="../contact/" class="inline-flex items-center gap-2 bg-merlin hover:bg-merlin-light text-white font-bold px-7 py-3.5 rounded-xl shadow-md transition-all hover:scale-105">
+            <span>Contact Technical Team</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- STATEMENT FOOTER -->
+  <footer class="bg-pine text-slate-300 pt-16 pb-12 border-t border-pine-subtle mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div class="lg:col-span-2 space-y-4">
+          <img src="../assets/img/merlin logo.webp" alt="Merlin Life Care Logo" class="h-12 w-auto object-contain brightness-110">
+          <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+            Delivering high-efficacy veterinary pharmaceuticals, bio-security formulations, and nutritional supplements to safeguard commercial poultry flock health and farm productivity.
+          </p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigation</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="../" class="text-slate-400 hover:text-merlin-light transition-colors">Home</a></li>
+            <li><a href="../about/" class="text-white font-medium hover:text-merlin-light transition-colors">About Company</a></li>
+            <li><a href="../products/" class="text-slate-400 hover:text-merlin-light transition-colors">Product Catalog (12)</a></li>
+            <li><a href="../contact/" class="text-slate-400 hover:text-merlin-light transition-colors">Contact & Facility</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-white mb-4">Therapeutics</p>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="../products/acido-forte/" class="text-slate-400 hover:text-merlin-light transition-colors">Acido Forte</a></li>
+            <li><a href="../products/crd-mint/" class="text-slate-400 hover:text-merlin-light transition-colors">CRD Mint</a></li>
+            <li><a href="../products/immunit-z/" class="text-slate-400 hover:text-merlin-light transition-colors">Immunit Z</a></li>
+            <li><a href="../products/mlc-100/" class="text-slate-400 hover:text-merlin-light transition-colors">MLC-100</a></li>
+            <li><a href="../products/frost/" class="text-slate-400 hover:text-merlin-light transition-colors">Frost</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-white mb-4">Multan Facility</p>
+          <p class="text-xs text-slate-400 leading-relaxed mb-2">
+            House # 119-A, Street # 4, Block E, Shah Rukn-e-Alam Colony, Multan.
+          </p>
+          <p class="text-xs text-slate-400"><span class="text-white font-medium">Direct:</span> +92 300 7387789</p>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>© 2026 Merlin Life Care. All rights reserved.</p>
+        <p>Veterinary Pharmaceutical & Poultry Healthcare Manufacturer.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/site.js"></script>
+</body>
+</html>
